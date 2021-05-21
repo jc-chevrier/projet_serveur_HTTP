@@ -1,0 +1,71 @@
+body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#documents-directory-container {
+    padding: 20px;
+    padding-left: 30px;
+    box-shadow: 0px 0px 2px gray;
+    width: 50%;
+    background: lightyellow;
+}
+
+.documents-directory-inner-content {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.documents-directory {
+    color: gray;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: DodgerBlue;
+}
+
+.documents-sub-directory-container {
+    padding-left: 20px;
+    border-left: 1px solid gray;
+}
+
+.documents-sub-directory {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 88px;
+    margin-bottom: 20px;
+    color: DodgerBlue;
+    font-weight: bold;
+}
+
+.documents-sub-directory:last-child {
+  margin-bottom: 0;
+}
+
+span.documents-sub-directory {
+   cursor: default;
+}
+
+a.documents-sub-directory:hover {
+    color: blue;
+}
+
+.documents-sub-directory:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: none;
+    color: gray;
+}
+
+a.documents-sub-directory:before {
+    content: "<dossier>";
+}
+
+span.documents-sub-directory:before {
+    content: "<fichier>";
+}
